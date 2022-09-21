@@ -1,0 +1,38 @@
+.cart__item-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.cart__item-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.cart__item-price {
+  font-size: 0.8rem;
+}
+.cart__item-price span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #df2020;
+}
+.quantity__btn {
+  background-color: #fde4e4;
+  padding: 2px 3px;
+  border-radius: 5px;
+}
+
+.increase__btn,
+.decrease__btn {
+  cursor: pointer;
+}
+.quantity {
+}
+.delete__btn {
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor:pointer;
+}
+.cart__item{
+    padding-bottom:10px;
+    border-bottom:1px solid #df2020;
+}

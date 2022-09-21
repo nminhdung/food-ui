@@ -1,0 +1,24 @@
+th {
+  text-align: center !important;
+}
+.cart__image-wrapper {
+  width: 80px;
+}
+.cart__image-wrapper img {
+  width: 100%;
+}
+.cart__item-delete i {
+  cursor: pointer;
+}
+.cart__subtotal span {
+  color: #df2020;
+  font-size: 1.5rem;
+}
+.cart__page-btn button a:hover {
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+    th,td{
+        font-size: 0.8rem;
+    }
+}
