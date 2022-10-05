@@ -22,7 +22,7 @@ function ProductCard({ data }) {
         </h5>
         <div className="d-flex align-items-center justify-content-between product__content-info">
           <span className="product__price">${price}</span>
-          <button className="addToCart__btn" onClick={addToCart}>
+          <button className="btn__primary" onClick={addToCart}>
             Add to Cart
           </button>
         </div>

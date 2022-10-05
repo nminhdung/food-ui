@@ -100,7 +100,7 @@ function Checkout() {
                     onChange={handleChange}
                   />
                 </div>
-                <button type="submit" className="addToCart__btn">
+                <button type="submit" className="btn__primary">
                   Payment
                 </button>
               </form>

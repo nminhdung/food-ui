@@ -44,7 +44,7 @@ function Register() {
                     ref={signupPassRef}
                   />
                 </div>
-                <button className="addToCart__btn" type="submit">
+                <button className="btn__primary" type="submit">
                   Sign up
                 </button>
               </form>

@@ -28,7 +28,7 @@ function Contact() {
                     rows={7}
                   ></textarea>
                 </div>
-                <button className="addToCart__btn" type="submit">
+                <button className="btn__primary" type="submit">
                   Send
                 </button>
               </form>

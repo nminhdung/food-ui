@@ -81,7 +81,7 @@ function FoodDetails() {
                 <p className="product__content-category mb-5">
                   Category: <span>{singleProduct.category}</span>
                 </p>
-                <button className="addToCart__btn" onClick={addItem}>
+                <button className="btn__primary" onClick={addItem}>
                   Add to Cart
                 </button>
               </div>
@@ -150,7 +150,7 @@ function FoodDetails() {
 
                       />
                     </div>
-                    <button type="submit" className="addToCart__btn">
+                    <button type="submit" className="btn__primary">
                       Submit
                     </button>
                   </form>

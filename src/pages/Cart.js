@@ -42,10 +42,10 @@ function Cart() {
                 </h6>
                 <p>Taxes and shipping will calculate at checkout</p>
                 <div className="cart__page-btn">
-                  <button className="addToCart__btn me-3">
+                  <button className="btn__primary me-3">
                     <Link to="/foods">Countinue Shopping</Link>
                   </button>
-                  <button className="addToCart__btn">
+                  <button className="btn__primary">
                     <Link to="/checkout">Proceed to checkout</Link>
                   </button>
                 </div>

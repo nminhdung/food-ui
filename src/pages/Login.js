@@ -34,7 +34,7 @@ function Login() {
                     ref={loginPassRef}
                   />
                 </div>
-                <button className="addToCart__btn" type="submit">
+                <button className="btn__primary" type="submit">
                   Login
                 </button>
               </form>

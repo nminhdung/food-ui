@@ -38,14 +38,7 @@
   font-size: 1.2rem;
   color: #df2020;
 }
-.addToCart__btn {
-  background-color: #df2020;
-  border: none;
-  padding: 7px 25px;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 0.9rem;
-}
+
 /*responsive*/
 @media only screen and (max-width: 992px) {
   .product__title{
@@ -58,8 +51,5 @@
     padding: 20px;
     margin-top: 16px;
   }
-  .addToCart__btn {
-    padding: 5px 15px;
-    font-size: 0.7rem;
-  }
+ 
 }

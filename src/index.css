@@ -42,6 +42,37 @@ h2 {
 section {
   padding: 60px 0px;
 }
+.form {
+  width: 60%;
+  margin: auto;
+  background: #fde4e4;
+  padding: 20px;
+  border-radius: 5px;
+}
+.form__group {
+  margin-bottom: 30px;
+}
+.form__group input,
+.form__group textarea {
+  width: 100%;
+  background: transparent;
+  padding: 7px 20px;
+  border: none;
+  border-bottom: 1px solid #212245b6;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+  outline: none;
+}
+.btn__primary {
+  background-color: #df2020;
+  border: none;
+  padding: 7px 25px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+}
 @media only screen and (max-width: 768px) {
   section {
     padding: 40px 0px;
@@ -49,5 +80,17 @@ section {
   h1,
   h2 {
     font-size: 1.5rem;
+  }
+  .form {
+    width: 100% !important;
+    margin-top: 60px;
+  }
+  .form__group input::placeholder,
+  .form__group textarea::placeholder {
+    font-size: 0.8rem;
+  }
+  .btn__primary {
+    padding: 5px 15px;
+    font-size: 0.7rem;
   }
 }
