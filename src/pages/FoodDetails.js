@@ -29,16 +29,17 @@ function FoodDetails() {
     dispatch(cartActions.addItem(singleProduct));
   };
 
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-  }
+  };
 
   useEffect(() => {
     setPreviewImg(singleProduct.image01);
-  }, [singleProduct]);
-  useEffect(() => {
     window.scrollTo(0, 0);
   }, [singleProduct]);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [singleProduct]);
   return (
     <Helmet title="Product-details">
       <CommonSection title={singleProduct.title} />
@@ -147,7 +148,6 @@ function FoodDetails() {
                         type="text"
                         placeholder="Write your review"
                         onChange={(e) => setReviewMsg(e.target.value)}
-
                       />
                     </div>
                     <button type="submit" className="btn__primary">

@@ -7,6 +7,7 @@
 }
 .search__widget input {
   border: none;
+  flex:1;
 }
 .search__widget input:focus {
   outline: none;

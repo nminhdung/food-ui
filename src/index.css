@@ -50,20 +50,28 @@ section {
   border-radius: 5px;
 }
 .form__group {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .form__group input,
 .form__group textarea {
   width: 100%;
-  background: transparent;
+  background: rgb(255, 255, 255);
   padding: 7px 20px;
-  border: none;
-  border-bottom: 1px solid #212245b6;
+  border: 1px solid #c24345b6;
+  border-radius:10px;
+  margin-bottom:10px;
 }
 
 .form__group input:focus,
 .form__group textarea:focus {
   outline: none;
+}
+.error-msg {
+  color: #df2020;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  text-align: left;
 }
 .btn__primary {
   background-color: #df2020;
