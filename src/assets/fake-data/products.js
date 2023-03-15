@@ -52,7 +52,7 @@ const products = [
   {
     id: "03",
     title: "Double Cheese Margherita",
-    price: 110.0,
+    price: 100.0,
     image01: product_03_image_01,
     image02: product_03_image_02,
     image03: product_03_image_03,
@@ -87,7 +87,7 @@ const products = [
   {
     id: "06",
     title: "Royal Cheese Burger",
-    price: 24.0,
+    price: 27.0,
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
@@ -111,7 +111,7 @@ const products = [
   {
     id: "08",
     title: "Thin Cheese Pizza",
-    price: 110.0,
+    price: 105.0,
     image01: product_03_image_02,
     image02: product_03_image_01,
     image03: product_03_image_03,
@@ -123,7 +123,7 @@ const products = [
   {
     id: "09",
     title: "Pizza With Mushroom",
-    price: 110.0,
+    price: 112.0,
     image01: product_04_image_02,
     image02: product_04_image_01,
     image03: product_04_image_03,
@@ -147,7 +147,7 @@ const products = [
   {
     id: "11",
     title: "Crunchy Bread ",
-    price: 35.0,
+    price: 26.0,
     image01: product_06_image_01,
     image02: product_06_image_02,
     image03: product_06_image_03,
@@ -159,7 +159,7 @@ const products = [
   {
     id: "12",
     title: "Delicious Bread ",
-    price: 35.0,
+    price:34.0,
     image01: product_06_image_02,
     image02: product_06_image_01,
     image03: product_06_image_03,
