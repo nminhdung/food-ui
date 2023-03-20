@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Helmet from "../components/Helmet/Helmet.js";
 import { Link } from "react-router-dom";
 import { Col, Container, Row, ListGroup, ListGroupItem } from "reactstrap";
+import Helmet from "../components/Helmet/Helmet.js";
 import Category from "../components/UI/category/Category.js";
 import heroImg from "../assets/images/hero.png";
 import featureImg01 from "../assets/images/service-01.png";
@@ -17,6 +17,8 @@ import networkImg from "../assets/images/network.png";
 import TestimonialSlider from "../components/UI/slider/TestimonialSlider.js";
 import "../styles/hero-section.css";
 import "../styles/home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const featureData = [
   {
@@ -73,6 +75,9 @@ function Home() {
     const slicePizza = filteredPizza.slice(0, 4);
     setHotPizza(slicePizza);
   }, []);
+  useEffect(()=>{
+    AOS.init();
+  },[])
   return (
     <Helmet title="Home">
       <section>
@@ -165,8 +170,8 @@ function Home() {
             <Col lg="12" className="text-center">
               <h2>Popular Foods</h2>
             </Col>
-            <Col lg="12">
-              <div className="food__category d-flex align-items-center justify-content-center gap-4">
+            <Col lg="12" >
+              <div className="food__category d-flex align-items-center justify-content-center gap-4"  data-aos="fade-down">
                 <button
                   className={`all__btn ${
                     category === "ALL" ? "foodBtnActive" : ""
@@ -190,7 +195,7 @@ function Home() {
               </div>
             </Col>
             {allProducts.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
+              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5" data-aos="fade-up">
                 <ProductCard data={item} />
               </Col>
             ))}
@@ -200,10 +205,10 @@ function Home() {
       <section className="why__choose-us">
         <Container>
           <Row>
-            <Col lg="6" md="6">
+            <Col lg="6" md="6"  data-aos="fade-right">
               <img src={whyImg} alt="why-tasty-treat" className="w-100" />
             </Col>
-            <Col lg="6" md="6">
+            <Col lg="6" md="6" data-aos="fade-left">
               <div className="why__tasty-treat">
                 <h2 className="tasty__treat-title mb-4">
                   Why <span>Tasty Treat ?</span>
@@ -257,7 +262,7 @@ function Home() {
             </Col>
             {hotPizza.map((item) => {
               return (
-                <Col lg="3" md="4" key={item.id}>
+                <Col lg="3" md="4" key={item.id} data-aos="fade-up">
                   <ProductCard data={item} />
                 </Col>
               );
@@ -279,10 +284,10 @@ function Home() {
                   Tenetur corrupti ducimus amet distinctio. Distinctio, totam
                   officiis et sapiente doloremque tenetur.
                 </p>
-                <TestimonialSlider/>
+                <TestimonialSlider />
               </div>
             </Col>
-            <Col lg="6" md="6">
+            <Col lg="6" md="6" data-aos="fade-left">
               <img src={networkImg} alt="testimonial-img" className="w-100" />
             </Col>
           </Row>
